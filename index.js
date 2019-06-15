@@ -63,7 +63,7 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   }
   else{
-    delete cart[i];
+    delete cart[i-1];
     return cart;
   }
 }
