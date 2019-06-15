@@ -49,7 +49,6 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var i = 0;
-  console.log(cart[i]);
   while(i < cart.length){
     if(cart[i] === item)
     {
