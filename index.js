@@ -50,7 +50,22 @@ function removeFromCart(item) {
   // write your code here
   var i = 0;
   console.log(cart[i]);
-
+  while(i < cart.length){
+    if(cart[i] === item)
+    {
+      break;
+    }
+    else{
+    i++;
+  }
+  }
+  if(i === cart.length){
+    return "That item is not in your cart.";
+  }
+  else{
+    delete cart[i];
+    return cart;
+  }
 }
 
 function placeOrder(cardNumber='') {
