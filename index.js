@@ -77,8 +77,8 @@ function placeOrder(cardNumber='') {
     var cost = 0;
     for(i = 0; i < cart.length; i++){
       cost = cost + cart[i]["itemPrice"];
-      delete cart[i];
     }
+    cart=[];
     return `Your total cost is $${cost}, which will be charged to the card ${cardNumber}.`;
   }
 }
