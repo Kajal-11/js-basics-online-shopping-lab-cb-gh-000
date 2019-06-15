@@ -50,7 +50,7 @@ function removeFromCart(item) {
   // write your code here
   var i = 0;
   while(i < cart.length){
-    if(cart[i]."itemName" === item)
+    if(cart[i]["itemName"] === item)
     {
       break;
     }
