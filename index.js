@@ -49,6 +49,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var i = 0;
+  console.log(item)
   while(i < cart.length){
     if(cart[i] === item)
     {
@@ -58,13 +59,7 @@ function removeFromCart(item) {
     i++;
   }
   }
-  if(i === cart.length){
-    return "That item is not in your cart.";
-  }
-  else{
-    cart = cart.splice(i,1);
-    return cart;
-  }
+
 }
 
 function placeOrder(cardNumber='') {
